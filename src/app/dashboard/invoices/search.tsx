@@ -3,7 +3,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 
-let timeoutId: any;
+let timeoutId: NodeJS.Timeout | undefined;
 
 const debounce = (callback: () => void) => {
   if (timeoutId) {
