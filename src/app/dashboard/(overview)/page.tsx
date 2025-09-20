@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { lusitana } from "../../ui/fonts";
-import CardWrapper, { Card } from "../ui/cards";
+import CardWrapper from "../ui/cards";
 import LatestInvoices from "../ui/latest-invoices";
 import RevenueChart from "../ui/revenue-chart";
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "../ui/skeletons";
