@@ -9,7 +9,7 @@ export default async function Page(props: {
     page?: string;
   }>;
 }) {
-  const searchParams = props.searchParams;
+  const s = await props.searchParams;
 
   return (
     <div className="w-full">
@@ -20,7 +20,7 @@ export default async function Page(props: {
         <Search placeholder="Search invoices..." />
         <CreateInvoice />
       </div>
-      <TableWrapper searchParams={searchParams}/>
+      <TableWrapper searchParams={s}/>
     </div>
   );
 }
